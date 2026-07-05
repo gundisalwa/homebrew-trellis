@@ -1,34 +1,33 @@
 # typed: false
 # frozen_string_literal: true
 
-# Trellis — a governance layer that supervises an agentic software-development process.
-# The version / url / sha256 lines below are REGENERATED on each release by
-# .github/workflows/update-formula.yml (decision-0032); don't hand-edit them.
+# Trellis — regenerated on each release by .github/workflows/update-formula.yml
+# (decision-0032); don't hand-edit the version / url / sha256 lines.
 class Trellis < Formula
   desc "Governance layer that supervises an agentic software-development process"
   homepage "https://gundisalwa.github.io/trellis/"
-  version "0.2.12"
+  version "0.2.13"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/gundisalwa/trellis/releases/download/v0.2.12/trellis_darwin_arm64"
-      sha256 "460bb37469e075608c9efbcded144ffeb2cd655135428ddf451c22e90afbb69c"
+      url "https://github.com/gundisalwa/trellis/releases/download/v0.2.13/trellis_darwin_arm64"
+      sha256 "8aad5dea1783c1af66597c2834fcf9405052112f4d2b668a13f8aab3a3b936bc"
     end
     on_intel do
-      url "https://github.com/gundisalwa/trellis/releases/download/v0.2.12/trellis_darwin_amd64"
-      sha256 "ec9f2bebd084260d7b6ef31bace975c45d174683eea16aa8ceb14d015742a519"
+      url "https://github.com/gundisalwa/trellis/releases/download/v0.2.13/trellis_darwin_amd64"
+      sha256 "4f8e83fee61532b95b6f6b59a1cfb5765df0267ccd6e190b1b3bb2ed63b7191e"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/gundisalwa/trellis/releases/download/v0.2.12/trellis_linux_arm64"
-      sha256 "eaf12a1f8acec68e4ad320a239555ee120b262753b254beec5bb1ac153c9980c"
+      url "https://github.com/gundisalwa/trellis/releases/download/v0.2.13/trellis_linux_arm64"
+      sha256 "8a0ae7fe1a38d6dc1a213851b04d7d3cfc7fb1351620fda9ac2fc2d7f489c38a"
     end
     on_intel do
-      url "https://github.com/gundisalwa/trellis/releases/download/v0.2.12/trellis_linux_amd64"
-      sha256 "d08d9a34cca18f68487465f9b1ace01559f11782cf630d15369b86639ef12230"
+      url "https://github.com/gundisalwa/trellis/releases/download/v0.2.13/trellis_linux_amd64"
+      sha256 "0e50996ad3352dafb7251999b548d66c5387a7fc7d108c082d56338fc5d03f41"
     end
   end
 
