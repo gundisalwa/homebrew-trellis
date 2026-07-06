@@ -6,28 +6,28 @@
 class Trellis < Formula
   desc "Governance layer that supervises an agentic software-development process"
   homepage "https://gundisalwa.github.io/trellis/"
-  version "0.2.17"
+  version "0.2.18"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/gundisalwa/trellis/releases/download/v0.2.17/trellis_darwin_arm64"
-      sha256 "35d2e99541639fd0dca05cda9c2151b23d495d39abfbee77d54ee7434f5c674f"
+      url "https://github.com/gundisalwa/trellis/releases/download/v0.2.18/trellis_darwin_arm64"
+      sha256 "a93cb65e71eda65b1a737e59db770d2411d1c160d7781800e92b2d07ed0f4ca5"
     end
     on_intel do
-      url "https://github.com/gundisalwa/trellis/releases/download/v0.2.17/trellis_darwin_amd64"
-      sha256 "77254815e4efb789e837d15d6ff8d4aa7e8ab63bd21c26058dc86fba5aeb0c4b"
+      url "https://github.com/gundisalwa/trellis/releases/download/v0.2.18/trellis_darwin_amd64"
+      sha256 "3434bb3aeb3633580ee5ee87562d0b2c66c028794e0f29b1c4950931824da0fe"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/gundisalwa/trellis/releases/download/v0.2.17/trellis_linux_arm64"
-      sha256 "74d973e75d77f1fdd5875d71d872659bfa20cc127fc702581214f9a8b26d8114"
+      url "https://github.com/gundisalwa/trellis/releases/download/v0.2.18/trellis_linux_arm64"
+      sha256 "46eece311e7dce34958d06ac3ffcfc01c2335f0368876bee62fde80a16db22f9"
     end
     on_intel do
-      url "https://github.com/gundisalwa/trellis/releases/download/v0.2.17/trellis_linux_amd64"
-      sha256 "abe7c169d827976b84db9d1df0306d2c8c19d1694ef84e89da178659b07c00a2"
+      url "https://github.com/gundisalwa/trellis/releases/download/v0.2.18/trellis_linux_amd64"
+      sha256 "02bc6134a51a3c4f3704a003f2651620e3d55e85b34ebd33b29cdcb47a657a81"
     end
   end
 
