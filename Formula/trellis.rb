@@ -6,28 +6,28 @@
 class Trellis < Formula
   desc "Governance layer that supervises an agentic software-development process"
   homepage "https://kodhama.github.io/trellis/"
-  version "0.2.26"
+  version "0.2.27"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/kodhama/trellis/releases/download/v0.2.26/trellis_darwin_arm64"
-      sha256 "aeef10571c0f8e6f87b872a49c26d03105014701d01df5812a9c376738f97d6e"
+      url "https://github.com/kodhama/trellis/releases/download/v0.2.27/trellis_darwin_arm64"
+      sha256 "4f04d15e6a755a000cc65bec6c7e3c36a3550eacb0d0e2287b5c775dbea8e71e"
     end
     on_intel do
-      url "https://github.com/kodhama/trellis/releases/download/v0.2.26/trellis_darwin_amd64"
-      sha256 "4a063e44e356e6d56b74e2dd8c9fcef7f41250b202578be33633b1a04609e856"
+      url "https://github.com/kodhama/trellis/releases/download/v0.2.27/trellis_darwin_amd64"
+      sha256 "b4923db6c7e01b51031a36d81ccdb8df5f4ba2a4e2c70f7d0b2ed3ed9fea1971"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/kodhama/trellis/releases/download/v0.2.26/trellis_linux_arm64"
-      sha256 "18c9a6ee0cd3d013e0aa85182762d29cd94b7f0dfed89ae955b4d5bb8271d156"
+      url "https://github.com/kodhama/trellis/releases/download/v0.2.27/trellis_linux_arm64"
+      sha256 "ccceca1456dbbe16ee30538f56db598b4067176e682ffa0284529e79283e4c29"
     end
     on_intel do
-      url "https://github.com/kodhama/trellis/releases/download/v0.2.26/trellis_linux_amd64"
-      sha256 "8b76a39b8c5fc5e1314d81886b291689ce81f683c561e55212ae0c2e09b541a5"
+      url "https://github.com/kodhama/trellis/releases/download/v0.2.27/trellis_linux_amd64"
+      sha256 "83644626d65ab1c3afc329b6992ef4197f9537bbdbd21523816aa310e2d4f32d"
     end
   end
 
