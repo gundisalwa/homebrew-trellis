@@ -1,13 +1,30 @@
 # typed: false
 # frozen_string_literal: true
 
-# Trellis — regenerated on each release by .github/workflows/update-formula.yml
-# (decision-0032); don't hand-edit the version / url / sha256 lines.
+# Trellis — DEPRECATED, frozen at v0.2.29 (the final binary release).
+#
+# The trellis end-user binary channel retired per kodhama-0007 rule 5
+# ("one render, many copiers" — kodhama/kodhama decisions/0007, implemented in
+# kodhama/trellis#120 / decision-0043). The regeneration machinery
+# (update-formula.yml + scripts/gen-formula.sh, decision-0032/0041) is removed
+# in the same change; this file is hand-frozen and no release will re-pin it.
+#
+# Install Trellis today:
+#   Claude Code:      /plugin marketplace add kodhama/kodhama
+#                     /plugin install trellis@kodhama
+#                     /trellis:setup
+#   any other harness: copy the pre-rendered payload — see the README's
+#                     "Get started" manual copy path in kodhama/trellis.
 class Trellis < Formula
   desc "Governance layer that supervises an agentic software-development process"
   homepage "https://kodhama.github.io/trellis/"
   version "0.2.29"
   license "MIT"
+
+  deprecate! date: "2026-07-10", because: "is replaced by the Claude Code plugin " \
+    "(/plugin marketplace add kodhama/kodhama, /plugin install trellis@kodhama, /trellis:setup) " \
+    "and the manual copy path in the kodhama/trellis README — the end-user binary channel " \
+    "retired (kodhama-0007 rule 5)"
 
   on_macos do
     on_arm do
@@ -33,6 +50,20 @@ class Trellis < Formula
 
   def install
     bin.install Dir["trellis_*"].first => "trellis"
+  end
+
+  def caveats
+    <<~EOS
+      The trellis binary channel is retired; this formula is frozen at v0.2.29
+      and will not receive updates. Install Trellis via the Claude Code plugin:
+
+        /plugin marketplace add kodhama/kodhama
+        /plugin install trellis@kodhama
+        /trellis:setup
+
+      or, for any other harness, copy the pre-rendered payload by hand — see
+      "Get started" in https://github.com/kodhama/trellis (kodhama-0007 rule 5).
+    EOS
   end
 
   test do
